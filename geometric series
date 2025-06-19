@@ -1,0 +1,10 @@
+class Main {
+    public static void main(String[] args) {
+     double sum=0;int n=20;int x=1;
+     for(int i=1,a=2,k=10;i<=n;i++,a+=2,k*=3){
+         sum+=(double)(x+a)/k;
+     }
+     System.out.println(sum);
+     
+    }
+}
