@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number:");
+        String num=sc.nextLine();
+        StringBuilder odd=new StringBuilder();
+        StringBuilder even=new StringBuilder();
+      for(int i=0;i<num.length();i++){
+          char ch=num.charAt(i);
+          int digit=ch-'0';
+          if(digit%2==1){
+              odd.append(ch);
+          }
+          else{
+              even.append(ch);
+          }
+      }
+      String output=odd.toString()+even.toString();
+      System.out.println(output);
+    
+    }
+     
