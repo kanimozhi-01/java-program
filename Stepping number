@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        boolean isStepping=true;
+        String digit=Integer.toString(num);
+        for(int i=0;i<digit.length()-1;i++){
+            int digit1=digit.charAt(i)-'0';
+            int digit2=digit.charAt(i+1)-'0';
+            if(Math.abs(digit1-digit2)!=1){
+                 isStepping=false;
+                break;
+            }
+        }
+        if(isStepping){
+            System.out.println("Yes");
+        }
+        else{
+            System.out.println("No");
+        }
+        
+        
+    }
+}
