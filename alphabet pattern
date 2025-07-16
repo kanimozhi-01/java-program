@@ -1,0 +1,14 @@
+class Main {
+    public static void main(String[] args) {
+      for(char row='e';row>='a';row--){
+          for(char space='e';space>row;space--){
+              System.out.print(" ");
+          }
+          for(char ch=row;ch>='a';ch--){
+              System.out.print(ch);
+          }
+          System.out.println();
+      }
+    }
+}
+       
