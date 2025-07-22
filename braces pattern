@@ -1,0 +1,14 @@
+public class BracesPattern {
+    public static void main(String[] args) {
+        int n = 2;
+        System.out.println("{ }");
+     String braces="";
+        for(int i=2;i<=n;i++){
+            braces+="{{ }}";
+            System.out.println("{ }"+braces);
+        }
+    }
+}
+
+
+    
